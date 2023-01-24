@@ -47,3 +47,9 @@ function clearEntry() {     //function is invoked every click because of onClick
         list[i-1].remove();
     }
 }
+
+input.addEventListener("keypress", function (event) {           //go to addEntry function when Enter key is pressed
+	if (event.key === "Enter") {
+		addEntry();
+	}
+});
