@@ -48,7 +48,8 @@ function clearEntry() {     //function is invoked every click because of onClick
     }
 }
 
-input.addEventListener("keypress", function (event) {           //go to addEntry function when Enter key is pressed
+var inputField = document.getElementById("input");
+inputField.addEventListener("keypress", function (event) {           //go to addEntry function when Enter key is pressed
 	if (event.key === "Enter") {
 		addEntry();
 	}
